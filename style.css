@@ -255,7 +255,7 @@ section::before{
 footer{
     color: aliceblue;
     font-weight: 900;
-    margin: 10px;
+    margin: 20px;
 }
 
 @media (max-width:992px){
@@ -347,7 +347,7 @@ footer{
     footer{
         color: aliceblue;
         font-weight: 900;
-        margin: 10px;
+        margin: 20px;
     }
 }
 ::-webkit-scrollbar {
