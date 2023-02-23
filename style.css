@@ -304,7 +304,7 @@ section::before{
             border-right: 4px solid #ff9d9d ;
         }
         70%,90%{
-            width: 24.5%;
+            width: 35%;
             border-radius: 30px;
             border-right: 4px solid #9dffff ;
         }
