@@ -343,6 +343,10 @@ footer{
         align-items: center;
         flex-direction: column;
     }
+    footer{
+        color: aliceblue;
+        font-weight: 900;
+    }
 }
 ::-webkit-scrollbar {
     width: 2px;
