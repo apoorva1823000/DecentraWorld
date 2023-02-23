@@ -119,7 +119,7 @@ section::before{
     z-index: 9;
     text-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
 }
-.sec,.sec2,.sec3{
+.sec,.sec2,.sec3,.sec4{
     position: relative;
     padding: 50px;
     margin: 10px;
@@ -132,13 +132,13 @@ section::before{
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-.sec h2,.sec2 h2,.sec3 h2{
+.sec h2,.sec2 h2,.sec3 h2,.sec4 h2{
     font-size: 3em;
     color: aliceblue;
     margin-bottom: 10px;
     text-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
 }
-.sec p,.sec2 p{
+.sec p,.sec2 p,.sec3 p,.sec4 p{
     font-size: 1.2em;
     color: aliceblue;
     font-weight: 300;
@@ -158,7 +158,7 @@ section::before{
     z-index: 9;
     transform: translateY(100px);
 }
-.govCardContainer,.gameCardContainer{
+.govCardContainer,.gameCardContainer,.fundCardContainer{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -166,7 +166,7 @@ section::before{
     padding: 40px;
     max-width: 1200px;
 }
-.govCardContainer .govCard,.gameCardContainer .gameCard{
+.govCardContainer .govCard,.gameCardContainer .gameCard,.fundCardContainer .fundCard{
     position: relative;
     width: 300px;
     height: 300px;
@@ -185,11 +185,11 @@ section::before{
     overflow: hidden;
     transition: all 0.5s ease-in-out;
 }
-.govCardContainer .govCard a:hover, .gameCardContainer .gameCard a:hover{
+.govCardContainer .govCard a:hover, .gameCardContainer .gameCard a:hover, .fundCardContainer .fundCard a:hover{
     background: #2b1055;
     color: white;
 }
-.govCardContainer .govCard .votingBox, .gameCardContainer .gameCard .lotteryBox{
+.govCardContainer .govCard .votingBox, .gameCardContainer .gameCard .lotteryBox, .fundCardContainer .fundCard .fundBox{
     position: absolute;
     top:20px;
     left:20px;
@@ -203,11 +203,11 @@ section::before{
     align-items: center;
     transition: 0.5s;
 }
-.govCardContainer .govCard:hover .votingBox, .gameCardContainer .gameCard:hover .lotteryBox{
+.govCardContainer .govCard:hover .votingBox, .gameCardContainer .gameCard:hover .lotteryBox, .fundCardContainer .fundCard:hover .fundBox{
     transform: translateY(-10px);
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
 }
-.govCardContainer .govCard .votingBox .content h2{
+.govCardContainer .govCard .votingBox .content h2, .gameCardContainer .gameCard .lotteryBox .content h2, .fundCardContainer .fundCard .fundBox .content h2{
     position: absolute;
     top: -10px;
     right: 30px;
@@ -216,23 +216,23 @@ section::before{
     transition: 0.5;
     pointer-events: none;
 }
-.govCardContainer .govCard:hover .votingBox .content h2, .gameCardContainer .gameCard:hover .lotteryBox .content h2{
+.govCardContainer .govCard:hover .votingBox .content h2, .gameCardContainer .gameCard:hover .lotteryBox .content h2, .fundCardContainer .fundCard:hover .fundBox .content h2{
     color: rgba(0,0,0,0.05);
 }
-.govCardContainer .govCard:hover .votingBox .content h3, .gameCardContainer .gameCard:hover .lotteryBox .content h3{
+.govCardContainer .govCard:hover .votingBox .content h3, .gameCardContainer .gameCard:hover .lotteryBox .content h3, .fundCardContainer .fundCard:hover .fundBox .content h3{
     font-size: 1.1em;
     color: #777;
     z-index: 1;
     transition: 0.5s;
 }
-.govCardContainer .govCard .votingBox .content p, .gameCardContainer .gameCard .lotteryBox .content p{
+.govCardContainer .govCard .votingBox .content p, .gameCardContainer .gameCard .lotteryBox .content p, .fundCardContainer .fundCard .fundBox .content p{
     font-size: 1em;
     font-weight: 300;
     color: #ffffff;
     z-index: 1;
     transition: 0.5s;
 }
-.govCardContainer .govCard .votingBox .content a, .gameCardContainer .gameCard .lotteryBox .content a{
+.govCardContainer .govCard .votingBox .content a, .gameCardContainer .gameCard .lotteryBox .content a, .fundCardContainer .fundCard .fundBox .content a{
     position: relative;
     display: inline-block;
     padding: 8px 20px;
@@ -244,7 +244,7 @@ section::before{
     font-weight: 400;
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
-.govCardContainer .govCard:hover .votingBox .content a, .gameCardContainer .gameCard:hover .lotteryBox .content a{
+.govCardContainer .govCard:hover .votingBox .content a, .gameCardContainer .gameCard:hover .lotteryBox .content a, .fundCardContainer .fundCard:hover .fundBox .content a{
     background: #ff568f;
 }
 
@@ -304,7 +304,7 @@ section::before{
             border-right: 4px solid #ff9d9d ;
         }
         70%,90%{
-            width: 35%;
+            width: 30%;
             border-radius: 30px;
             border-right: 4px solid #9dffff ;
         }
