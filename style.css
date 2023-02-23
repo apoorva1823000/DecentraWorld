@@ -252,6 +252,10 @@ section::before{
 .govCardContainer .govCard:hover .votingBox .content a, .gameCardContainer .gameCard:hover .lotteryBox .content a, .fundCardContainer .fundCard:hover .fundBox .content a, .rwCardContainer .rwCard:hover .rwBox .content a{
     background: #ff568f;
 }
+footer{
+    color: aliceblue;
+    font-weight: 900;
+}
 
 @media (max-width:992px){
     #header{

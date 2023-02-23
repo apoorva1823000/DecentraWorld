@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="icon" href="images\logo.png" type="image/icon type">
 </head>
-<body>
+<body onload="todayDate()">
     <header id="header">
         <h2 data-text="LoopBreakers" class="logo">LoopBreakers</h2>
         <div class="toggle"></div>
@@ -185,7 +185,9 @@
         </div>
     </div>
 
-
+    <footer>
+        &copy; <em id="date"></em>LoopBreakers
+    </footer>
 
 
     <script>
@@ -213,6 +215,11 @@
             toggleMenu.classList.toggle('active');
             navigation.classList.toggle('active');
         }
+        function todayDate(){
+        var d = new Date();
+        var n = d.getFullYear() + "  ";
+        return document.getElementById("date").innerHTML = n;
+      }
     </script>
 </body>
 </html>
