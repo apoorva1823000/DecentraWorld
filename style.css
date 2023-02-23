@@ -10,7 +10,7 @@
 }
 
 body{
-    background: linear-gradient(45deg,#140133,#083086,#2f00ae,#4300fd);
+    background: linear-gradient(45deg,#140133,#083086,#2f00ae,#4300fd,#2f00ae,#083086);
     min-height: 100vh;
     transition: all 1s ease-in-out;
     scroll-behavior: smooth;
@@ -20,7 +20,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 30px 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,11 +63,11 @@ body{
 }
 #header .navigation li{
     list-style: none;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 #header .navigation li a{
     text-decoration: none;
-    padding: 6px 15px;
+    padding: 6px 10px;
     color: #fff;
     border-radius: 20px;
     font-weight: bold;
@@ -123,6 +123,7 @@ section::before{
     z-index: 9;
     text-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
 }
+
 .sec,.sec2,.sec3,.sec4,.sec5{
     position: relative;
     padding: 50px;
@@ -308,7 +309,7 @@ section::before{
             border-right: 4px solid #ff9d9d ;
         }
         70%,90%{
-            width: 30%;
+            width: 50%;
             border-radius: 30px;
             border-right: 4px solid #9dffff ;
         }
